@@ -14,8 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Engine",
-  description: "Create a premium developer/designer portfolio in under 60 seconds",
+  title: "Portfolio Engine | Premium Developer Portfolios",
+  description: "Create a stunning, animated developer portfolio in under 60 seconds. Modern themes, dynamic content, and one-click deployment.",
+  openGraph: {
+    title: "Portfolio Engine",
+    description: "Your professional presence, deployed in seconds.",
+    url: "https://portfolio-engine.app",
+    siteName: "Portfolio Engine",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio Engine",
+    description: "Build your dream portfolio in under 60 seconds.",
+  },
 };
 
 export default function RootLayout({
