@@ -1,9 +1,8 @@
 "use client"
 
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Loader2, Plus, Trash2, Github, Instagram, Linkedin, Link as LinkIcon, Edit3, Check } from "lucide-react"
+import { signOut } from "next-auth/react"
 import { useRouter } from "next/navigation"
+import { Loader2, Plus, Trash2, Github, Instagram, Linkedin, Link as LinkIcon, Edit3, Check, LogOut } from "lucide-react"
 
 export default function DashboardClient({ initialData }: { initialData: any }) {
   const router = useRouter()
@@ -197,6 +196,12 @@ export default function DashboardClient({ initialData }: { initialData: any }) {
                )}
                {savingProfile ? <Loader2 className="w-6 h-6 animate-spin text-zinc-900" /> : 
                 successMsg ? <><Check className="w-6 h-6 text-green-600"/> Profile Saved!</> : "Save All Changes"}
+            </button>
+            <button 
+               onClick={() => signOut({ callbackUrl: "/" })}
+               className="w-full flex items-center justify-center gap-2 py-3 bg-red-500/10 text-red-500 font-bold rounded-2xl hover:bg-red-500/20 transition-all border border-red-500/20"
+            >
+               <LogOut className="w-5 h-5" /> Sign Out
             </button>
           </div>
        </div>
