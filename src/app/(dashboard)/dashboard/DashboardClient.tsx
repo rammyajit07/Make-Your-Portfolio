@@ -185,10 +185,18 @@ export default function DashboardClient({ initialData }: { initialData: any }) {
             <button 
                onClick={handleSaveProfile} 
                disabled={savingProfile} 
-               className="w-full flex items-center justify-center gap-2 py-4 bg-white text-black font-bold text-lg rounded-2xl hover:bg-zinc-200 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 shadow-2xl"
+               className="group relative w-full flex items-center justify-center gap-2 py-4 bg-white text-black font-bold text-lg rounded-2xl hover:bg-zinc-100 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 shadow-2xl overflow-hidden"
             >
-               {savingProfile ? <Loader2 className="w-6 h-6 animate-spin" /> : 
-                successMsg ? <><Check className="w-6 h-6 text-green-600"/> Saved</> : "Save Profile Data"}
+               {savingProfile && (
+                 <motion.div 
+                   initial={{ x: "-100%" }} 
+                   animate={{ x: "100%" }} 
+                   transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+                   className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent pointer-events-none"
+                 />
+               )}
+               {savingProfile ? <Loader2 className="w-6 h-6 animate-spin text-zinc-900" /> : 
+                successMsg ? <><Check className="w-6 h-6 text-green-600"/> Profile Saved!</> : "Save All Changes"}
             </button>
           </div>
        </div>
