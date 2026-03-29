@@ -4,13 +4,13 @@ import { Github, Instagram, Linkedin, ExternalLink } from "lucide-react"
 
 export default function DarkTheme({ user, projects, skills, links }: any) {
   return (
-    <div className="min-h-screen bg-[#070707] text-zinc-300 font-sans selection:bg-emerald-500/30">
-      <div className="max-w-5xl mx-auto px-6 py-20 md:py-32">
+    <div className="min-h-screen bg-[#070707] text-zinc-300 font-sans selection:bg-emerald-500/30 overflow-x-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-32">
         <motion.header 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-24"
+          className="mb-16 md:mb-24"
         >
           <div className="inline-block px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-emerald-400 text-sm font-mono mb-6">
             Developer Portfolio
