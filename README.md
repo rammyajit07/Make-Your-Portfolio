@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio Engine
 
-## Getting Started
+Build a premium, animated developer portfolio in under 60 seconds.
 
-First, run the development server:
+![Portfolio Engine](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **4 Premium Themes**: Choose from Dark Dev, Minimal Clean, Creative Designer, or Glass Modern.
+- **Dynamic Content**: Manage your projects, skills, and bio from a centralized dashboard.
+- **NextAuth Security**: Safe and secure authentication with Google and Email providers.
+- **Framer Motion**: Ultra-smooth animations and transitions for a professional feel.
+- **Responsive Design**: Looks stunning on everything from mobile to 4K displays.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 14+ (App Router)
+- **Styling**: Tailwind CSS
+- **Database**: PostgreSQL (Prisma ORM)
+- **Auth**: NextAuth.js
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rammyajit07/Make-Your-Portfolio.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Database Setup**:
+   - Create a project on [Supabase](https://supabase.com).
+   - Copy your Connection URI to your `.env` file as `DATABASE_URL`.
+   - Run: `npx prisma db push`
 
-## Deploy on Vercel
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Themes Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Dark Dev**: Pitch black minimal, neon accents.
+- **Minimal Clean**: Stark white, beautiful typography.
+- **Creative Designer**: Colorful accents, expressive layout.
+- **Glass Modern**: Blurred backdrop, gradient mesh.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+---
+
+Built with ❤️ by [rammyajit07](https://github.com/rammyajit07)
