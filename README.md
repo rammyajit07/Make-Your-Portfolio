@@ -12,7 +12,7 @@ Build a premium, animated developer portfolio in under 60 seconds.
 - **Framer Motion**: Ultra-smooth animations and transitions for a professional feel.
 - **Responsive Design**: Looks stunning on everything from mobile to 4K displays.
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack Used
 
 - **Framework**: Next.js 14+ (App Router)
 - **Styling**: Tailwind CSS
